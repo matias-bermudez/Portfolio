@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
+import AboutMe from './Components/AboutMe.jsx'
+import Projects from './Components/Projects.jsx'
+import Certifications from './Components/Certifications.jsx'
+import Contact from './Components/Contact.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -13,7 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<AboutMe />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='certifications' element={<Certifications />} />
+          <Route path='/certifications' element={<Certifications />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
