@@ -1,10 +1,15 @@
 import './Styles/Navbar.css';
 import { NavLink } from 'react-router-dom';
+import name from '../assets/name.png';
 
 function Navbar() {
     return (
+
     <nav className='navbar'>
         <ul>
+            <li>
+                <img src={name} alt="" className='name-tit' />
+            </li>
             <li>
                 <NavLink 
                     to='/'

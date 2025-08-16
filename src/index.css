@@ -4,12 +4,12 @@ html, body {
     box-sizing: border-box;
     min-height: 1vh;
     width: 100%;
-    background: radial-gradient(circle, #0a0a0a, #0d1015, #061a3f, #0e1117);
+    background: radial-gradient(circle, #0a0a0a, #0d1015, #040507, #0e1117);
     background-size: 400% 400%;
 }
 
 #root {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
