@@ -1,0 +1,25 @@
+.certifications {
+    display: flex;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+}
+
+.certifications h2 {
+    margin: 0;
+}
+
+.certifications .carrousel {
+    position: relative;
+}
+
+.certifications .carrousel img {
+    object-fit: contain;
+    width: 200px;
+    margin: 10px 30px;
+}
+
