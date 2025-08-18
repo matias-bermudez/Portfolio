@@ -8,8 +8,10 @@
     height: auto;
     justify-content: left;
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: 2;
+    margin-left: 50px;
+    margin-top: 10px;
 }
 
 .navbar ul {
