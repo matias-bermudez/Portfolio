@@ -1,11 +1,27 @@
 import './Styles/Navbar.css';
 import { NavLink } from 'react-router-dom';
 import name from '../assets/name.png';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
+    const [scroll, setScroll] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScroll(true)
+            } else {
+                setScroll(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [])
     return (
 
-    <nav className='navbar'>
+    <nav className={`navbar ${scroll ? 'navbar-scrolled' : ''}`}>
         <ul>
             <li>
                 <img src={name} alt="" className='name-tit' />
