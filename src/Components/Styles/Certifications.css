@@ -1,4 +1,4 @@
-.certifications {
+.page {
     display: flex;
     color: white;
     display: flex;
@@ -11,11 +11,11 @@
     margin-left: 100px;
 }
 
-.certifications h2 {
+.page h2 {
     margin: 0;
 }
 
-.certifications .carrousel {
+.page .carrousel {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -23,9 +23,10 @@
     justify-content: center;
 }
 
-.certifications .carrousel img {
+.page .carrousel img {
     object-fit: contain;
-    width: 300px;
-    margin: 10px 50px 10px 0px;
+    width: 350px;
+    margin: 10px 100px 10px 0px;
+    border-radius: 5px;
 }
 

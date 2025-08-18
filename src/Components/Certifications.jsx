@@ -10,7 +10,7 @@ function Certifications () {
                 title='My  achivments' 
                 txt='These are some of the certifications I’ve earned along the way, showing my curiosity and dedication to keep learning new tools'
             />
-            <div className='certifications'>
+            <div className='page'>
                 <h2>My Certifications</h2>
                 <div className='carrousel'>
                     <img src={devweb} alt="" />
