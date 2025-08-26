@@ -1,10 +1,12 @@
 import './Styles/Navbar.css';
 import { NavLink } from 'react-router-dom';
+import NotificationsList from './NotificationsList.jsx'
 import name from '../assets/name.png';
 import { useState, useEffect } from 'react';
 
 function Navbar() {
     const [scroll, setScroll] = useState(false)
+    const [notifState, setNotif] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -69,6 +71,13 @@ function Navbar() {
                 </NavLink>
             </li>
         </ul>
+
+        <div>
+            <button onClick={() => setNotif(actState => !actState)}> 🔔 </button>
+            {
+                notifState && ( <NotificationsList onClose={() => setNotif(false)} /> )
+            }
+        </div>
     </nav>
     )
 }
