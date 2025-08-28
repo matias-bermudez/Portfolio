@@ -6,6 +6,7 @@
     display: flex;
     color: white;
     position: relative;
+    margin-top: -50px;
 }
 
 .home .background {

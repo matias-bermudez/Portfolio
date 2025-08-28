@@ -1,0 +1,24 @@
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    align-items: left;
+    width: 230px;
+    margin-top: 50px;
+    margin-left: -138px;
+    justify-content: center;
+    padding: 5px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.notifications-list button {
+    background-color: red !important;
+    width: 30px;
+}
+
+.notifications-list h3 {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
