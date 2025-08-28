@@ -2,6 +2,8 @@ import './Styles/Navbar.css';
 import { NavLink } from 'react-router-dom';
 import NotificationsList from './NotificationsList.jsx'
 import name from '../assets/name.png';
+import bell from '../assets/bell.png'
+import search from '../assets/search.png'
 import { useState, useEffect } from 'react';
 
 function Navbar() {
@@ -73,7 +75,12 @@ function Navbar() {
         </ul>
 
         <div>
-            <button onClick={() => setNotif(actState => !actState)}> 🔔 </button>
+            <button>
+                <img src={search} alt="" />
+            </button>
+            <button onClick={() => setNotif(actState => !actState)}>
+                <img src={bell} alt="" />
+            </button>
             {
                 notifState && ( <NotificationsList onClose={() => setNotif(false)} /> )
             }

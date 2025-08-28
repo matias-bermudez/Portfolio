@@ -1,0 +1,25 @@
+.notification {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    width: 100%;
+    height: 70px;
+}
+
+.notification .img-container {
+    width: 120px;
+    height: 50px;
+}
+
+.notification img {
+    object-fit: fill;
+    width: 100px;
+    height: 50px;
+}
+
+.notification h1 {
+    text-align: left;
+    width: 1px;
+}

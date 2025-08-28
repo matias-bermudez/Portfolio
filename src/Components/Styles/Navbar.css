@@ -19,10 +19,21 @@
 
 .navbar div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: inherit;
     right: 0;
     padding-right: 58px;
+    gap: 20px;
+}
+
+.navbar div button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar div button img {
+    object-fit: contain;
+    height: 25px;
 }
 
 .navbar-scrolled {
