@@ -1,9 +1,12 @@
 import './Styles/Home.css'
 import background from '../assets/code.webp'
 import CV from '../assets/CV-MatiasBermudez-ENG.pdf'
+import Navbar from './Navbar'
+
 function Home( {title, txt}) {
     return (
         <section className="home">
+            <Navbar />
             <div className="text-home">
                 <div className='sub-title'>
                     <h2 className='letter'>M</h2>
