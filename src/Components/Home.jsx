@@ -24,6 +24,7 @@ function Home( {title, txt}) {
                 </div>
             </div>
             <img src={background} alt="profile photo" className='background'/>
+
         </section>
     )
 }

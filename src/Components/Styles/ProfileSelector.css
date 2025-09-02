@@ -18,15 +18,14 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(107, 35, 35, 0.537);
+    background: rgb(0, 0, 0);
     z-index: 9999;
-    animation: slideDown 900ms ease forwards;
+    animation: opacity 2000ms ease forwards;
 }
 
-@keyframes slideDown {
-    0% { transform: translateY(-100%) }
-    60% {transform: translateY(-40%)}
-    100% {transform: translateY(0)}
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .full-screen .profiles {
