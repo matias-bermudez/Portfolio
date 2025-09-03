@@ -1,0 +1,31 @@
+.contact-page .page {
+    display: flex;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    position: absolute;
+    bottom: -100px;
+    z-index: 2;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.contact-page .page .carrousel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-page .page .carrousel button {
+    width: 250px;
+    height: 140px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: radial-gradient(rgb(0, 0, 0), rgb(255, 0, 0), rgb(72, 2, 2));
+    background-size: 400vh 400vh;
+}
+
