@@ -1,0 +1,27 @@
+.page .carrousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 10px;
+}
+
+.page .carrousel .project-card {
+    width: 384px;    /* 1/5 de 1920 */
+    height: 216px;   /* 1/5 de 1080 */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.page .carrousel .project-card iframe {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;              
+    transform: scale(0.2); 
+    transform-origin: top left; 
+    border: 0;
+    border-radius: 0;    
+}
