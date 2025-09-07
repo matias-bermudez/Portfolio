@@ -1,11 +1,18 @@
 import Home from '../Components/Home.jsx'
 import '../Components/Styles/Projects.css'
-import catering from '../assets/catering.png'
-import ecommerce from '../assets/ecommerce.png'
-import truco from '../assets/truco.png'
-import ufc from '../assets/ufc.png'
-import './Styles/Certifications.css'
+import { getProjects } from '.././db/db.js'
+import Project from './Project.jsx'
+import { useState, useEffect } from 'react'
 function Projects() {
+    const [projects, setProjects] = useState([])
+
+    useEffect(() => {
+        getProjects()
+            .then((res) => {
+                setProjects(res)
+            })
+    }, [])
+
     return (
         <section>
             <Home 
@@ -13,12 +20,13 @@ function Projects() {
                 txt='Here are some projects where I applied my frontend skills to build responsive, user-friendly, and visually appealing applications.'
             />
             <div className='page'>
-                <h2>My</h2>
+                <h2>My projects</h2>
                 <div className='carrousel'>
-                    <img src={ecommerce} alt="" />
-                    <img src={truco} alt="" />
-                    <img src={ufc} alt="" />
-                    <img src={catering} alt="" />
+                    {   
+                        projects.map((p) => (
+                            <Project key={p.id} project={p} />
+                        ))
+                    }
                 </div>
             </div>
         </section>
